@@ -7,17 +7,21 @@ class ActionHelper
   def initialize(game=nil)
     @game = game
     @actions = YAML.load_file('resources/actions.yml')
-    ap @actions
+
     @actions_array = []
     @actions.each do |type, info| 
+      ap info
       info.each do |public_type, info2|
         info2.each do |action_name, action_info|
-          @actions_array << {
+          o = {
             :type => type,
             :public => public_type,
             :name => action_name,
-            :desc => action_info
+            :desc => action_info,
+            :id => action_info["id"]
           }
+          ap o
+          @actions_array << o
         end
       end
     end
@@ -26,10 +30,9 @@ class ActionHelper
   def draw_three
     draws = @actions_array.sample(3)
     draws.each { |a| @actions_array.delete a }
-    ap draws
-    draws
+    draws.map {|action| action[:id]}
   end
 end
 
 a = ActionHelper.new
-a.draw_three
+ap a.draw_three
