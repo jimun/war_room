@@ -1,0 +1,6 @@
+water:
+  depletion_rate: 0.03
+coal:
+  depletion_rate: 0.08
+wheat:
+  depletion_rate: 0.03

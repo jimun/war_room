@@ -1,0 +1,38 @@
+destructive:
+  public:
+    hammer:
+      description: "This is a hammer"
+      power: 1
+      target: 
+        - population
+    missile:
+      description: Missile
+      power: 2
+      target: population
+  private:
+    gas:
+      description: "Secretly put gas in the water!"
+      power: 3
+      target: 
+        - population
+        - water
+      secrecy: .5
+    espionage:
+      description: "Secretly steal some of the resources!"
+      power: 3
+      target:
+        - wheat
+      secrecy: .5
+constructive:
+  event_1:
+    description: "Increase one random resource of both party"
+    power: .3
+    length: 3
+    target: resource
+    recipient: other
+  event_2:
+    description: "Save water, encourage people to use less water for 3 turns"
+    power: -.05
+    length: 3
+    target: water
+    recipent: self
