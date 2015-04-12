@@ -1,6 +1,6 @@
 require 'grape'
 require 'rack/stream'
-require 'redis'
+require 'sqlite3'
 #require 'redis/connection/synchrony'
 
 class API < Grape::API

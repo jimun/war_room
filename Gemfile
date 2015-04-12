@@ -5,6 +5,4 @@ source 'https://rubygems.org'
 gem 'rack-stream'
 gem 'thin'
 gem 'grape'
-gem 'redis'
-
-gem 'grape'
+gem 'sqlite3'
