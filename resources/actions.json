@@ -1,7 +1,7 @@
 {
   "destructive": {
-    "public": {
-      "hammer": {
+    "public": [
+      {
         "id": 1,
 		"name": "Hammer",
         "description": "This is a hammer.",
@@ -10,21 +10,21 @@
           "population"
         ]
       },
-      "missile": {
+      {
         "id": 2,
 		"name": "Missile",
         "description": "Explosives on Rockets.",
         "power": 2,
         "target": "population"
       },
-	  "microwave": {
+	  {
         "id": 7,
 		"name": "Microwave Oven",
         "description": "Nuke them into submission.",
         "power": 1,
         "target": "population"
       }
-    },
+    ],
     "private": {
       "gas": {
         "id": 3,
