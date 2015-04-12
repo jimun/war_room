@@ -1,0 +1,73 @@
+{
+  "destructive": {
+    "public": {
+      "item": {
+        "id": 1,
+		"name": "Hammer",
+        "description": "This is a hammer.",
+        "power": 1,
+        "target": [
+          "population"
+        ]
+      },
+      "item": {
+        "id": 2,
+		"name": "Missile",
+        "description": "Explosives on Rockets.",
+        "power": 2,
+        "target": "population"
+      }
+	  "item": {
+        "id": 7,
+		"name": "Microwave Oven",
+        "description": "Nuke them into submission.",
+        "power": 1,
+        "target": [
+          "population",
+          "water"
+        ]
+      }
+    },
+    "private": {
+      "gas": {
+        "id": 3,
+        "description": "Secretly put gas in the water!",
+        "power": 3,
+        "target": [
+          "population",
+          "water"
+        ],
+        "secrecy": 0.5
+      },
+      "espionage": {
+        "id": 4,
+        "description": "Secretly steal some of the resources!",
+        "power": 3,
+        "target": [
+          "wheat"
+        ],
+        "secrecy": 0.5
+      }
+    }
+  },
+  "constructive": {
+    "public": {
+      "event_1": {
+        "id": 5,
+        "description": "Increase one random resource of both party",
+        "power": 0.3,
+        "length": 3,
+        "target": "resource",
+        "recipient": "other"
+      },
+      "event_2": {
+        "id": 6,
+        "description": "Save water, encourage people to use less water for 3 turns",
+        "power": -0.05,
+        "length": 3,
+        "target": "water",
+        "recipent": "self"
+      }
+    }
+  }
+}
