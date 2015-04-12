@@ -1,0 +1,17 @@
+{
+   "country1": {
+      "name": "Somethingland",
+	  "population": 5000000,
+	  "money": 50000000
+   }
+   "country2": {
+      "name": "Newtopia",
+	  "population": 5000000,
+	  "money": 50000000
+   }
+   "country3": {
+      "name": "Oldtopia",
+	  "population": 5000000,
+	  "money": 50000000
+   }
+}
