@@ -1,7 +1,7 @@
 require 'grape'
 require 'rack/stream'
 require 'redis'
-require 'redis/connection/synchrony'
+#require 'redis/connection/synchrony'
 
 class API < Grape::API
   default_format :txt
